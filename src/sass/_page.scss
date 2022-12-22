@@ -1,0 +1,44 @@
+.page{
+    font-family: $main-font;
+    color: $main-txt-cl;
+    font-size: 14px;
+
+    &.modal-open {
+        overflow: hidden;
+    }
+
+    background-position: center; 
+
+    background-image: url("../images/page-bg-image/backgroud_mobile@1x.jpg");
+
+        @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+            background-image: url("../images/page-bg-image/backgroud_mobile@2x.jpg");   
+    }
+    
+
+
+    @media screen and (min-width: 768px) {
+
+        background-image: url("../images/page-bg-image/background_tablet@1x.jpg");
+
+        @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+            background-image:  url("../images/page-bg-image/background_tablet@2x.jpg");   
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+
+       
+        background-image: url("../images/page-bg-image/backgroud_desktop@1x.jpg");
+
+        @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+            background-image: url("../images/page-bg-image/backgroud_desktop@2x.jpg");   
+        }
+    }
+}

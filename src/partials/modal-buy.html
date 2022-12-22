@@ -1,0 +1,84 @@
+<div class="backdrop is-hidden" data-buy-modal> 
+    <div class="modal-buy">
+        <button class="close-button--black" type="button" data-buy-modal-close>
+            <svg class="close__icon--black">
+                 <use href="./images/icons.svg#close"></use>
+             </svg>
+          </button>
+
+          <h2 class="modal-buy__title">Buy now</h2>
+          <ol class="ice-cream-types">
+            <li class="ice-cream-types__item">
+              <input class="ice-cream-types__ckeckbox ice-cream-types__ckeckbox--first" type="checkbox" name="ice-cream__type" value="ice-cream" />
+              <div class="modal-buy__photo-container modal-buy__photo-container--first">
+                <picture class="modal-buy__photo">
+                  <source media="(min-width:480px )" srcset="./images/modal-buy/icecream-modal-buy1x.png, ./images/modal-buy/icecream-modal-buy2x.png">
+                  <img src="./images/modal-buy/icecream-modal-buy1x.png" alt="icecream">
+                  </picture>
+                <div class="ice-cream__round ice-cream__round--first">
+                  <p class="ice-cream__text">ice cream</p>
+                </div>
+              </div>
+            </li>
+            <li class="ice-cream-types__item">
+              <input class="ice-cream-types__ckeckbox ice-cream-types__ckeckbox--second" type="checkbox" name="ice-cream__type" value="ice-coffee"/>
+              <div class="modal-buy__photo-container modal-buy__photo-container--second">
+                <picture class="modal-buy__photo">
+                  <source media="(min-width:480px )" srcset="./images/products.-modal-windows/cofee_s@1x.png, ./images/products.-modal-windows/cofee_s@2x.png">
+                  <img src="./images/products.-modal-windows/cofee_s@1x.png" alt="icecoffee">
+                  </picture>
+                <div class="ice-cream__round ice-cream__round--second">
+                  <p class="ice-cream__text">ice coffee</p>
+                </div>
+              </div>
+            </li>
+            <li class="ice-cream-types__item">
+              <input class="ice-cream-types__ckeckbox ice-cream-types__ckeckbox--third" type="checkbox" name="ice-cream__type" value="milkshake"/>
+              <div class="modal-buy__photo-container modal-buy__photo-container--third">
+                <picture class="modal-buy__photo">
+                  <source media="(min-width:480px )" srcset="./images/products.-modal-windows/milkshake_s@1x.png, ./images/products.-modal-windows/milkshake_s@1x.png">
+                  <img src="./images/products.-modal-windows/milkshake_s@1x.png" alt="milkshakes">
+                </picture>
+                <div class="ice-cream__round ice-cream__round--third">
+                  <p class="ice-cream__text">milkshake</p>
+                </div>
+              </div>
+            </li>
+          </ol>
+
+
+          <form class="form-buy">
+            <input
+              class="form-buy__input"
+              type="text"
+              name="username"
+              placeholder="Name"
+              pattern="[A-Za-z0-9]{6,}"
+              title="Логін не может бути меншим за 6 латинських символів."
+              autofocus
+              required
+            />
+            <input
+              class="form-buy__input"
+              type="tel"
+              name="phone"
+              placeholder="Phone"
+              minlength="8"
+              maxlength="12"
+              pattern="\+?[0-9\s\-\(\)]+"
+    
+              title="Номер телефону не може бути меншим за вісім символів"
+              required
+            />
+            <textarea
+            class="form-buy__input form-buy__input--multiline"
+            name="comment"
+            placeholder="Comment"
+            ></textarea>
+
+          <button type="submit" class="modal-buy__button-send">
+            Submit
+          </button>
+        </form>
+    </div>
+</div>

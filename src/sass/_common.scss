@@ -14,35 +14,30 @@ p {
     margin: 0;
 }
 
-.link {
-    text-decoration: none;
-    color: var(--color-body);
-}
-
-.list {
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-}
-
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
-label {
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+label, input, textarea {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-input {
-    margin: 0;
-    padding: 0;
-    border: 0;
+.icon {
+    display: inline-block;
+    stroke-width: 0;
+    fill: currentColor;
 }
 
-textarea {
-    margin: 0;
-    padding: 0;
-    border: 0;
+.link {
+    text-decoration: none;
 }

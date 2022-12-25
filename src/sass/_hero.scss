@@ -344,10 +344,12 @@ right: 100px;
   animation-duration: 3000ms;
   animation-timing-function: linear;
 
+  
+
 }
 .hero-image--plate {
 
-    animation-name: Appearance;
+  animation-name: Appearance;
   animation-duration: 3000ms;
   animation-timing-function: linear; 
 
@@ -366,6 +368,11 @@ right: 100px;
         max-width: 255px;
     }
 
+ @include transitionRules (transform);
+
+ &:hover {
+     transform: scale(1.1);
+ }
     
 }
 

@@ -10,16 +10,17 @@
                 <div class="about__photo">
 <!-- PHOTO COW -->
                     <picture>
-
-                        <source srcset="./images/about/cow280w.png 280w,
-          ./images/about/cow280w@2x.png 560w" media="(max-width: calc($tablet - 1px))" sizes=" 100vw" type="image/png">
-
+                        <source srcset="./images/about/cow490w.png 490w,                                                     
+                                        ./images/about/cow490w@2x.png 980w" 
+                        media="(min-width:$desktop)" sizes=" 50vw" type="image/png">
+                        
                         <source srcset="./images/about/cow330w.png 330w,
-          ./images/about/cow330w@2x.png 660w" media="(min-width:$tablet)" sizes=" 50vw" type="image/png">
-
-                        <source srcset="./images/about/cow490w.png 490w,
-          ./images/about/cow490w@2x.png 980w" media="(min-width:$desktop)" sizes=" 50vw" type="image/png">
-
+                                        ./images/about/cow330w@2x.png 660w" 
+                        media="(min-width:$tablet)" sizes=" 50vw" type="image/png">
+                        <source srcset="./images/about/cow280w.png 280w,
+                                        ./images/about/cow280w@2x.png 560w" 
+                        media="(max-width: calc($tablet - 1px))" sizes=" 100vw" type="image/png">
+                      
                         <img src="./images/about/cow280w.png" alt="Cow" width="280" class="about__img " />
 
                     </picture>

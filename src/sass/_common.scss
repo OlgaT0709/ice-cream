@@ -4,6 +4,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body.modal-open {
+    overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -32,12 +36,12 @@ label, input, textarea {
     border: 0;
 }
 
-.icon {
-    display: inline-block;
-    stroke-width: 0;
-    fill: currentColor;
-}
+ .icon {
+     display: inline-block;
+     stroke-width: 0;
+     fill: currentColor;
+ }
 
-.link {
-    text-decoration: none;
-}
+ .link {
+     text-decoration: none;
+ }

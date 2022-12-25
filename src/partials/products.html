@@ -1,3 +1,4 @@
+<!-- SECTION products -->
 <section class="products" id="our-products">
     <div class="container">
         
@@ -18,9 +19,9 @@
                     </button>
                     <div class="products__photo">
                         <picture>
-                            <source media="(max-width: 767px)" srcset="./images/product/ice-cream_s@1x.png, ./images/product/ice-cream_s@2x.png ">
-                            <source media="(min-width: 768px) and (max-width: 1199px)" srcset="./images/product/ice-cream_m@1x.png, ./images/product/ice-cream_m@2x.png ">
-                            <source media="(min-width: 1200px)" srcset="./images/product/ice-cream_xl@1x.png, ./images/product/ice-cream_xl@2x.png ">
+                            <source media="(max-width: calc($tablet - 1px))" srcset="./images/product/ice-cream_s@1x.png, ./images/product/ice-cream_s@2x.png ">
+                            <source media="(min-width:$tablet) and (max-width: calc($desktop - 1px))" srcset="./images/product/ice-cream_m@1x.png, ./images/product/ice-cream_m@2x.png ">
+                            <source media="(min-width:$desktop)" srcset="./images/product/ice-cream_xl@1x.png, ./images/product/ice-cream_xl@2x.png ">
                             <img
                             class="products__img"
                             src="./images/product/ice-cream_s@1x.png"

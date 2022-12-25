@@ -56,6 +56,9 @@
         border-color: $green-bt-cl;
         color: $white-txt-cl;
     }
+    &:focus .buttons__icon {
+        fill: $white-txt-cl;
+    }
     &:disabled {
         border-color: $grey-bt-cl;
         color: $black-txt-cl;
